@@ -5,6 +5,7 @@ import { defineUserConfig } from 'vuepress'
 export default defineUserConfig({
   bundler: viteBundler(),
   theme: defaultTheme({ 
+    logo: '/public/logo.svg',
     navbar: [
         {
             text: 'Home',
@@ -16,6 +17,7 @@ export default defineUserConfig({
         }
     ]
   }),
+  public: `public`,
   dest: "./dist",
   lang: 'en-GB',
   title: 'Hello VuePress',
